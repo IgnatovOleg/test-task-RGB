@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    position: relative;
+    width: 1440px;
+    height: 820px;
+    overflow: hidden;
+
+    background: #242731;
+}
+
+.leftellipse {
+    position: absolute;
+    width: 399.01px;
+    height: 400.31px;
+    left: -31.33px;
+    bottom: 489.69px;
+
+    background: #332F65;
+    opacity: 0.5;
+    filter: blur(103.131px);
+    transform: rotate(9.41deg);
+}
+
+.rightEllipse {
+    position: absolute;
+    width: 790.65px;
+    height: 793.23px;
+    left: 1068.67px;
+    bottom: 342.77px;
+
+    background: #332F65;
+    opacity: 0.8;
+    filter: blur(103.131px);
+    transform: rotate(9.41deg);
+}
+
+.html {
+    position: absolute;
+    width: 88.28px;
+    height: 88.28px;
+    left: 1317.61px;
+    top: 241.81px;
+
+    transform: rotate(12.3deg);
+}
+
+.html-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 1402px;
+    top: 260.45px;
+    border-radius: 50%;
+
+    background: #F16529;
+}
+
+.css {
+    position: absolute;
+    height: 85.45px;
+    left: 1218.8px;
+    top: 364.22px;
+
+    transform: rotate(-21.66deg);
+}
+
+.css-point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 1290px;
+    border-radius: 50%;
+    top: 338.45px;
+
+    background: #2965F1;
+}
+
+.javascript {
+    position: absolute;
+    width: 61.89px;
+    height: 72.94px;
+    left: 1344.16px;
+    top: 404.2px;
+
+    transform: rotate(15.82deg);
+}
+
+.js-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 1410px;
+    top: 424.45px;
+    border-radius: 50%;
+
+    background: #F0BE25;
+}
+
+.sublime {
+    position: absolute;
+    width: 53.93px;
+    height: 53.93px;
+    left: 1221px;
+    top: 498.06px;
+
+    transform: rotate(-15.12deg);
+}
+
+.sublime-point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 1279px;
+    top: 471px;
+    border-radius: 50%;
+
+    background: #FF9800;
+}
+
+.vscode {
+    position: absolute;
+    width: 60.62px;
+    height: 60.62px;
+    left: 1296px;
+    top: 568.29px;
+    border-radius: 50%;
+
+    transform: rotate(-20.56deg);
+}
+
+.vs-point {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 1378px;
+    top: 608px;
+    border-radius: 50%;
+
+    background: #48AEF3;
+}
+
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 158.73px;
+    left: 0px;
+    top: 705px;
+
+    font-weight: 800;
+    font-size: 129.359px;
+    line-height: 158px;
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 1.59744px rgba(255, 255, 255, 0.05);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

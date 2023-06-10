@@ -1,0 +1,113 @@
+.header-container {
+    position: absolute;
+    width: 1040px;
+    height: 104px;
+    left: 200px;
+    top: 10px;
+
+    .logo-container {
+        position: absolute;
+        width: 182px;
+        height: 56px;
+        left: 56px;
+        top: 24px;
+
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .powercode {
+            position: absolute;
+            left: 35.1%;
+            right: 0%;
+            top: 18.75%;
+            bottom: 59.38%;
+        }
+
+        .academy {
+            position: absolute;
+            left: 35.1%;
+            right: 0%;
+            top: 53.12%;
+            bottom: 18.75%;
+        }
+
+    }
+
+    .date {
+        position: absolute;
+        width: 141px;
+        height: 40px;
+        left: 684px;
+        top: 32px;
+
+        background: #302E5A;
+        border-radius: 10px;
+
+        &>* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            position: absolute;
+            left: 23px;
+            top: 13px;
+
+            width: 15px;
+            height: 15px;
+        }
+
+        p {
+            position: absolute;
+            width: 75px;
+            height: 14px;
+            top: 13px;
+            right: 22px;
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+
+            color: #FFFFFF;
+        }
+    }
+
+    .time {
+        position: absolute;
+        width: 141px;
+        height: 40px;
+        left: 843px;
+        top: 32px;
+
+        background: #302E5A;
+        border-radius: 10px;
+
+    }
+
+    img {
+        position: absolute;
+        top: 12px;
+        left: 32px;
+    }
+
+    p {
+        position: absolute;
+        width: 55px;
+        height: 14px;
+        top: 13px;
+        right: 31px;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+
+        display: flex;
+        align-items: center;
+
+        color: #FFFFFF;
+    }
+}
