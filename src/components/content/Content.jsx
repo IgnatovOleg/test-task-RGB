@@ -1,8 +1,8 @@
 import React from "react";
 import "./Content.scss";
 import vector from "../../img/Vector.svg"
-import people from "../../img/Group3757.svg"
-import bonus from "../../img/image1347.svg"
+import people from "../../img/people.svg"
+import bonus from "../../img/bonus.svg"
 
 
 const Content = () => {

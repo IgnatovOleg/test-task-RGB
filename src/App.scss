@@ -8,7 +8,7 @@
     width: 1440px;
     height: 820px;
     overflow: hidden;
-    z-index: -2;
+    margin: auto;
 
     background: #242731;
 
@@ -180,7 +180,7 @@
     height: 912px;
     left: -151px;
     top: 430px;
-    z-index: -1;
+    z-index: 1;
 
     background: #332F65;
     filter: blur(250px);

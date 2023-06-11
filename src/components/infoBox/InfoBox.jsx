@@ -1,7 +1,7 @@
 import React from "react"
 import "./InfoBox.scss"
-import people from "../../img/Group3757.svg"
-import bonus from "../../img/image1347.svg"
+import people from "../../img/people.svg"
+import bonus from "../../img/bonus.svg"
 
 
 const InfoBox = () => {

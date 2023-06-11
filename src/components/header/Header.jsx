@@ -4,7 +4,7 @@ import shape from "../../img/Shape.svg"
 import powercode from "../../img/POWERCODE.svg"
 import academy from "../../img/ACADEMY.svg"
 import calendar from "../../img/Сalendar.svg"
-import time from "../../img/gg_time.svg"
+import time from "../../img/time.svg"
 
 const Header = () => {
 

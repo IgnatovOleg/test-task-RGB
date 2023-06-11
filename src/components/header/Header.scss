@@ -5,6 +5,7 @@
     height: 104px;
     left: 200px;
     top: 10px;
+    z-index: 2;
 
     @media (max-width: 360px) {
         position: absolute;
