@@ -8,11 +8,17 @@
     width: 1440px;
     height: 820px;
     overflow: hidden;
+    z-index: -2;
 
     background: #242731;
+
+    @media (max-width: 360px) {
+        width: 360px;
+        height: 999px;
+    }
 }
 
-.leftellipse {
+.leftEllipse {
     position: absolute;
     width: 399.01px;
     height: 400.31px;
@@ -23,6 +29,10 @@
     opacity: 0.5;
     filter: blur(103.131px);
     transform: rotate(9.41deg);
+
+    @media (max-width: 360px) {
+        display: none;
+    }
 }
 
 .rightEllipse {
@@ -38,7 +48,7 @@
     transform: rotate(9.41deg);
 }
 
-.html {
+.htmlIcon {
     position: absolute;
     width: 88.28px;
     height: 88.28px;
@@ -59,7 +69,7 @@
     background: #F16529;
 }
 
-.css {
+.cssIcon {
     position: absolute;
     height: 85.45px;
     left: 1218.8px;
@@ -79,7 +89,7 @@
     background: #2965F1;
 }
 
-.javascript {
+.javascriptIcon {
     position: absolute;
     width: 61.89px;
     height: 72.94px;
@@ -158,4 +168,24 @@
     -webkit-text-stroke: 1.59744px rgba(255, 255, 255, 0.05);
     -webkit-text-fill-color: transparent;
     color: transparent;
+
+    @media (max-width: 360px) {
+        display: none;
+    }
+}
+
+.ellipse-bottom {
+    position: absolute;
+    width: 912px;
+    height: 912px;
+    left: -151px;
+    top: 430px;
+    z-index: -1;
+
+    background: #332F65;
+    filter: blur(250px);
+
+    @media (min-width: 361px) {
+        display: none;
+    }
 }

@@ -8,6 +8,14 @@
     background: #303A53;
     border-radius: 10px;
 
+    @media (max-width: 360px) {
+        max-width: 328px;
+        width: 100%;
+        height: 423px;
+        left: 16px;
+        top: 329px
+    }
+
 
     h1 {
         display: flex;
@@ -22,6 +30,15 @@
         font-size: 22px;
         line-height: 25.99px;
         color: #FFFFFF;
+
+        @media (max-width: 360px) {
+            max-width: 328px;
+            width: 100%;
+            padding: 41px 0 18px 0;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
 
         p {
             color: #FF3459;
@@ -39,6 +56,14 @@
         font-size: 15px;
         line-height: 24px;
         color: #FFFFFF;
+
+        @media (max-width: 360px) {
+            background: #0048FF;
+            padding: 11.61px 35.72px 11.94px 34.54px;
+            margin: 0 52.87px;
+            font-size: 14px;
+            line-height: 22px
+        }
     }
 
     .confidentiality {
@@ -49,6 +74,10 @@
         padding: 0px 59px 0px 59px;
         margin-top: 20px;
 
+        @media (max-width: 360px) {
+            margin-top: 18.45px;
+        }
+
         span {
             font-weight: 500;
             font-size: 12px;
@@ -56,14 +85,28 @@
             text-align: center;
 
             color: rgba(255, 255, 255, 0.5);
-            
+
+            @media (max-width: 360px) {
+
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+            }
+
         }
     }
+
     .underline {
         position: relative;
         top: -3px;
         max-width: 192px;
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        @media (max-width: 360px) {
+            max-width: 176px;
+            width: 100%;
+        }
+
     }
 }
