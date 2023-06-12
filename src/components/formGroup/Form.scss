@@ -116,4 +116,34 @@
         }
 
     }
+    .warning-name, .warning-phone, .warning-email {
+        position: absolute;
+        top: -10px;
+        left: 65px;
+        font-size: 10px;
+        color: red;
+        
+
+        @media (max-width: 415px) {
+            left: 22px;
+        }
+    }
+    .warning-name {
+        top: 178px;
+        @media (max-width: 415px) {
+            top: 161px;
+        }
+    }
+    .warning-phone {
+        top: 243px;
+        @media (max-width: 415px) {
+            top: 227px;
+        }
+    }
+    .warning-email {
+        top: 308px;
+        @media (max-width: 415px) {
+            top: 292px;
+        }
+    }
 }

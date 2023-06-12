@@ -1,8 +1,7 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import Input from "./form/Input";
 import "./Form.scss"
 import { useForm } from "react-hook-form";
-import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import emailjs from "emailjs-com";
 
@@ -10,16 +9,11 @@ import emailjs from "emailjs-com";
 
 const Form = () => {
 
-    const schema = yup.object().shape({
-        userName: yup.string().required("Введите имя и фамилию"),
-        phone: yup.number().required("Введите номер телефона"),
-        email: yup.string().required("Введите email").email("Введите корректный email"),
-    });
 
-
-    const { register, handleSubmit } = useForm({
-        resolver: yupResolver(schema),
-    });
+    const { register,
+        handleSubmit,
+        formState: { errors }
+    } = useForm();
 
     const form = useRef();
 
@@ -42,27 +36,35 @@ const Form = () => {
                 <Input
                     register={register("userName", {
                         required: true,
+                        pattern: /^[A-Za-zА-Яа-яЁёІіЇї\s]+$/i,
                     })}
                     placeholder="Ваше имя и фамилия"
                 />
+                <div className="warning-name">{errors.userName && <span>Имя и фамилия должны иметь больше 5 букв</span>}</div>
                 <Input
                     countryList={"countryList"}
                     register={register("phone", {
-                        required: true
+                        required: true,
+                        pattern: /^[0-9]{10,}$/,
                     })}
                     placeholder="Ваш номер телефона" />
+                {errors.phone && (
+                    <div className="warning-phone"><span>Номер должен иметь не меньше 10 цифер</span></div>
+                )}
                 <datalist id="countryList">
-                    <option value="+52 5">usa</option>
-                    <option value="+1 437">Canada</option>
-                    <option value="+380">UK</option>
+                    <option value="52 5">usa</option>
+                    <option value="1 437">Canada</option>
+                    <option value="380">UK</option>
                     <option value="8 10 612">Australia</option>
                 </datalist>
                 <Input
-                    register={register("email", {
-                        required: true
+                    register={register("email", { 
+                        required: true, 
+                        pattern: /^\S+@\S+$/i 
                     })}
                     placeholder="Ваш email"
                 />
+                <div className="warning-email">{errors.email && <span>Введите корректный email</span>}</div>
                 <button>Записаться бесплатно</button>
             </form>
             <div className="confidentiality">
