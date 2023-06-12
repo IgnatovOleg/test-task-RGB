@@ -2,7 +2,7 @@
     padding: 0px 59px 14px 59px;
     z-index: 2;
 
-    @media (max-width: 360px) {
+    @media (max-width: 415px) {
         padding: 0 16px;
         padding-bottom: 14px;
     }
@@ -27,7 +27,7 @@
         line-height: 24px;
         color: #D7D7D7;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             max-width: 242px;
             width: 100%;
             font-weight: 400;

@@ -7,12 +7,17 @@
     top: 10px;
     z-index: 2;
 
-    @media (max-width: 360px) {
+    @media (max-width: 415px) {
         position: absolute;
         width: 100%;
         left: 0;
         top: 0;
     }
+
+    @media screen and (min-width: 415px) and (max-width: 913px) {
+        left: 0;
+    }
+
 
     .logo-container {
         position: absolute;
@@ -22,7 +27,7 @@
         left: 56px;
         top: 24px;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             max-width: 101px;
             width: 100%;
             height: 32px;
@@ -37,7 +42,7 @@
             max-width: 49.87px;
             width: 100%;
 
-            @media (max-width: 360px) {
+            @media (max-width: 415px) {
                 height: 32px;
                 width: 28px;
             }
@@ -50,7 +55,7 @@
             top: 18.75%;
             bottom: 59.38%;
 
-            @media (max-width: 360px) {
+            @media (max-width: 415px) {
                 max-width: 65.55px;
                 width: 100%;
                 height: 7px;
@@ -65,7 +70,7 @@
             bottom: 18.75%;
 
 
-            @media (max-width: 360px) {
+            @media (max-width: 415px) {
                 max-width: 65.55px;
                 width: 100%;
                 height: 9px;
@@ -85,13 +90,17 @@
         background: #302E5A;
         border-radius: 10px;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             left: 166px;
             max-width: 88px;
             width: 100%;
             height: 24px;
             border-radius: 6px;
         }
+        @media screen and (min-width: 415px) and (max-width: 913px) {
+            left: 400px;
+          }
+    
 
 
         img {
@@ -103,7 +112,7 @@
             width: 100%;
             height: 15px;
 
-            @media (max-width: 360px) {
+            @media (max-width: 415px) {
                 top: 6.55px;
                 left: 7.05px;
                 max-width: 10.46px;
@@ -125,7 +134,7 @@
 
             color: #FFFFFF;
 
-            @media (max-width: 360px) {
+            @media (max-width: 415px) {
                 width: max-content;
                 top: 5.15px;
                 left: 22.11px;
@@ -147,13 +156,19 @@
         background: #302E5A;
         border-radius: 10px;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             max-width: 84px;
             width: 100%;
             height: 24px;
             left: 260px;
             border-radius: 6px;
         }
+
+        @media screen and (min-width: 415px) and (max-width: 913px) {
+            left: 550px;
+          }
+    
+
 
     }
 
@@ -162,7 +177,7 @@
         top: 12px;
         left: 32px;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             max-width: 10.34px;
             width: 100%;
             height: 10.34px;
@@ -189,7 +204,7 @@
 
         color: #FFFFFF;
 
-        @media (max-width: 360px) {
+        @media (max-width: 415px) {
             max-width: max-content;
             width: 100%;
             top: 5.15px;
