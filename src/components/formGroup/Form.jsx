@@ -60,7 +60,7 @@ const Form = () => {
                 <Input
                     register={register("email", { 
                         required: true, 
-                        pattern: /^\S+@\S+$/i 
+                        pattern: /^[A-Za-z.@]+$/
                     })}
                     placeholder="Ваш email"
                 />
