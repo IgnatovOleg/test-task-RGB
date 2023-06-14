@@ -37,6 +37,7 @@ const Form = () => {
                     register={register("userName", {
                         required: true,
                         pattern: /^[A-Za-zА-Яа-яЁёІіЇї\s]+$/i,
+                        minLength: 5,
                     })}
                     placeholder="Ваше имя и фамилия"
                 />
