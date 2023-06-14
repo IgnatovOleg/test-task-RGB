@@ -49,7 +49,7 @@ const Form = () => {
                     })}
                     placeholder="Ваш номер телефона" />
                 {errors.phone && (
-                    <div className="warning-phone"><span>Номер должен иметь не меньше 10 цифер</span></div>
+                    <div className="warning-phone"><span>Номер должен иметь не меньше 10 цифр</span></div>
                 )}
                 <datalist id="countryList">
                     <option value="52 5">usa</option>
