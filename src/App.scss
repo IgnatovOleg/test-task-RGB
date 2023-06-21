@@ -37,7 +37,7 @@
     filter: blur(103.131px);
     transform: rotate(9.41deg);
 
-    @media (max-width: 767px) {
+    @media (max-width: 912px) {
         display: none;
     }
 }
@@ -177,7 +177,7 @@
     color: transparent;
 
     @media (max-width: 913px) {
-        display: block;
+        display: none;
     }
 
 }
@@ -187,14 +187,14 @@
     width: 912px;
     height: 912px;
     left: -151px;
-    top: 430px;
+    top: 700px;
     z-index: 1;
 
     background: #332F65;
     filter: blur(250px);
 
     @media (min-width: 913px) {
-        display: block;
+        display: none;
     }
     
 }

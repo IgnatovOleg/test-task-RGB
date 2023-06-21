@@ -296,6 +296,7 @@
         @media (max-width: 415px) {
             display: none;
         }
+
         @media screen and (min-width: 415px) and (max-width: 913px) {
             position: absolute;
             top: 800px;
@@ -318,7 +319,9 @@
 
             p {
                 color: #4252D1;
-
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 16px;
 
             }
         }
@@ -352,7 +355,7 @@
         @media (max-width: 415px) {
             display: none;
         }
-        
+
         @media screen and (min-width: 415px) and (max-width: 913px) {
             position: absolute;
             top: 920px;
