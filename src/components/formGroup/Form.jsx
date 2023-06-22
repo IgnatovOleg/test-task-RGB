@@ -35,9 +35,12 @@ const Form = () => {
             <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <Input
                     register={register("userName", {
-                        required: true,
-                        pattern: /^[A-Za-zА-Яа-яЁёІіЇї\s]+$/i,
-                        minLength: 5,
+                        required: "Enter login",
+                            pattern: {
+                                value: /^[a-zA-Z0-9]+$/,
+                                message: "Pleace enter valid login",
+                            },
+                            minLength: 5
                     })}
                     placeholder="Ваше имя и фамилия"
                 />
@@ -45,8 +48,12 @@ const Form = () => {
                 <Input
                     countryList={"countryList"}
                     register={register("phone", {
-                        required: true,
-                        pattern: /^[0-9]{10,}$/,
+                        required: "Enter phone number",
+                            pattern: {
+                                value: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
+                                message: "Enter valid phone"
+                            },
+                            minLength: 10
                     })}
                     placeholder="Ваш номер телефона" />
                 {errors.phone && (
@@ -60,8 +67,12 @@ const Form = () => {
                 </datalist>
                 <Input
                     register={register("email", { 
-                        required: true, 
-                        pattern: /^[A-Za-z.@]+$/
+                        required: "Enter email",
+                        pattern: {
+                            value: /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/i,
+                            message: "Valid email (0-9 a-z Z-A @ .)",
+                        },
+                        minLength: 5,
                     })}
                     placeholder="Ваш email"
                 />
